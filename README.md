@@ -14,7 +14,7 @@ platform :ios, '11.0'
 use_frameworks!
 
 target 'MyApp' do
-  pod 'Juno', :git => 'https://github.com/emreond/Juno.git', :tag => '0.0.1'
+  pod 'Juno', :git => 'https://github.com/emreond/Juno.git', :tag => '0.0.2'
 end
 ```
 Run `pods install` or `pods update` to intagrate pods with your project.
