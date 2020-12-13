@@ -17,7 +17,33 @@
 		C88CBF2A2586097900E5FAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88CBF292586097900E5FAFE /* Assets.xcassets */; };
 		C88CBF2D2586097900E5FAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88CBF2B2586097900E5FAFE /* LaunchScreen.storyboard */; };
 		C88CBF4525860CB000E5FAFE /* Juno.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF4425860CB000E5FAFE /* Juno.swift */; };
+		C88CBF5425861CF500E5FAFE /* Juno.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88CBF012586076600E5FAFE /* Juno.framework */; };
+		C88CBF5525861CF500E5FAFE /* Juno.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C88CBF012586076600E5FAFE /* Juno.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C88CBF5625861CF500E5FAFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C88CBEF82586076600E5FAFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C88CBF002586076600E5FAFE;
+			remoteInfo = Juno;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C88CBF5825861CF500E5FAFE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C88CBF5525861CF500E5FAFE /* Juno.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C88CBF012586076600E5FAFE /* Juno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Juno.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -48,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88CBF5425861CF500E5FAFE /* Juno.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +87,7 @@
 				C88CBF032586076600E5FAFE /* Juno */,
 				C88CBF1F2586097900E5FAFE /* JunoExample */,
 				C88CBF022586076600E5FAFE /* Products */,
+				C88CBF5325861CF500E5FAFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +124,13 @@
 				C88CBF2E2586097900E5FAFE /* Info.plist */,
 			);
 			path = JunoExample;
+			sourceTree = "<group>";
+		};
+		C88CBF5325861CF500E5FAFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,10 +172,12 @@
 				C88CBF1A2586097900E5FAFE /* Sources */,
 				C88CBF1B2586097900E5FAFE /* Frameworks */,
 				C88CBF1C2586097900E5FAFE /* Resources */,
+				C88CBF5825861CF500E5FAFE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C88CBF5725861CF500E5FAFE /* PBXTargetDependency */,
 			);
 			name = JunoExample;
 			productName = JunoExample;
@@ -226,6 +263,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C88CBF5725861CF500E5FAFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C88CBF002586076600E5FAFE /* Juno */;
+			targetProxy = C88CBF5625861CF500E5FAFE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C88CBF262586097900E5FAFE /* Main.storyboard */ = {
