@@ -4,6 +4,21 @@ Logger for iOS platform which allows you to see/display all print logs on UI com
 
 [![Swift Version][swift-image]][swift-url]
 
+## Integration
+
+#### CocoaPods
+You can use [CocoaPods](http://cocoapods.org/) to install `Juno` by adding it to your `Podfile`:
+
+```ruby
+platform :ios, '11.0'
+use_frameworks!
+
+target 'MyApp' do
+	pod 'Juno'
+end
+```
+Run `pods install` or `pods update` to intagrate pods with your project.
+
 
 ## How Does It Work:
 
@@ -15,8 +30,12 @@ Just initialize the Juno right after `didFinishLaunchWithOptions` function in Ap
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        ....
-        
+        let bounds = UIScreen.main.bounds
+        window = UIWindow(frame: bounds)
+        let mainController = ViewController()
+        window?.rootViewController = UINavigationController(rootViewController: mainController)
+        window?.makeKeyAndVisible()
+
         #if DEBUG
         Juno()
         #endif
