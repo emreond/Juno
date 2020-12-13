@@ -47,6 +47,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
  Run below code to print
  
  `Juno.print("Console Log Example")`
+ 
 **How To Run Example**
 
 Just select `JunoExample` scheme and hit run!
