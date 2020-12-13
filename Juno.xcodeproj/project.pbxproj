@@ -8,16 +8,43 @@
 
 /* Begin PBXBuildFile section */
 		C88CBF062586076600E5FAFE /* Juno.h in Headers */ = {isa = PBXBuildFile; fileRef = C88CBF042586076600E5FAFE /* Juno.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C88CBF0E258607CE00E5FAFE /* JunoMainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF0D258607CE00E5FAFE /* JunoMainController.swift */; };
+		C88CBF122586081700E5FAFE /* ConsoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF112586081700E5FAFE /* ConsoleViewController.swift */; };
+		C88CBF152586082700E5FAFE /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF142586082700E5FAFE /* Logger.swift */; };
+		C88CBF212586097900E5FAFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF202586097900E5FAFE /* AppDelegate.swift */; };
+		C88CBF252586097900E5FAFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF242586097900E5FAFE /* ViewController.swift */; };
+		C88CBF282586097900E5FAFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88CBF262586097900E5FAFE /* Main.storyboard */; };
+		C88CBF2A2586097900E5FAFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C88CBF292586097900E5FAFE /* Assets.xcassets */; };
+		C88CBF2D2586097900E5FAFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C88CBF2B2586097900E5FAFE /* LaunchScreen.storyboard */; };
+		C88CBF4525860CB000E5FAFE /* Juno.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88CBF4425860CB000E5FAFE /* Juno.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C88CBF012586076600E5FAFE /* Juno.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Juno.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C88CBF042586076600E5FAFE /* Juno.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Juno.h; sourceTree = "<group>"; };
 		C88CBF052586076600E5FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88CBF0D258607CE00E5FAFE /* JunoMainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JunoMainController.swift; sourceTree = "<group>"; };
+		C88CBF112586081700E5FAFE /* ConsoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleViewController.swift; sourceTree = "<group>"; };
+		C88CBF142586082700E5FAFE /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		C88CBF1E2586097900E5FAFE /* JunoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JunoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C88CBF202586097900E5FAFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C88CBF242586097900E5FAFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C88CBF272586097900E5FAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C88CBF292586097900E5FAFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C88CBF2C2586097900E5FAFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C88CBF2E2586097900E5FAFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C88CBF4425860CB000E5FAFE /* Juno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Juno.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C88CBEFE2586076600E5FAFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88CBF1B2586097900E5FAFE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				C88CBF032586076600E5FAFE /* Juno */,
+				C88CBF1F2586097900E5FAFE /* JunoExample */,
 				C88CBF022586076600E5FAFE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				C88CBF012586076600E5FAFE /* Juno.framework */,
+				C88CBF1E2586097900E5FAFE /* JunoExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,8 +77,25 @@
 			children = (
 				C88CBF042586076600E5FAFE /* Juno.h */,
 				C88CBF052586076600E5FAFE /* Info.plist */,
+				C88CBF0D258607CE00E5FAFE /* JunoMainController.swift */,
+				C88CBF112586081700E5FAFE /* ConsoleViewController.swift */,
+				C88CBF142586082700E5FAFE /* Logger.swift */,
+				C88CBF4425860CB000E5FAFE /* Juno.swift */,
 			);
 			path = Juno;
+			sourceTree = "<group>";
+		};
+		C88CBF1F2586097900E5FAFE /* JunoExample */ = {
+			isa = PBXGroup;
+			children = (
+				C88CBF202586097900E5FAFE /* AppDelegate.swift */,
+				C88CBF242586097900E5FAFE /* ViewController.swift */,
+				C88CBF262586097900E5FAFE /* Main.storyboard */,
+				C88CBF292586097900E5FAFE /* Assets.xcassets */,
+				C88CBF2B2586097900E5FAFE /* LaunchScreen.storyboard */,
+				C88CBF2E2586097900E5FAFE /* Info.plist */,
+			);
+			path = JunoExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,15 +130,37 @@
 			productReference = C88CBF012586076600E5FAFE /* Juno.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		C88CBF1D2586097900E5FAFE /* JunoExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88CBF2F2586097900E5FAFE /* Build configuration list for PBXNativeTarget "JunoExample" */;
+			buildPhases = (
+				C88CBF1A2586097900E5FAFE /* Sources */,
+				C88CBF1B2586097900E5FAFE /* Frameworks */,
+				C88CBF1C2586097900E5FAFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JunoExample;
+			productName = JunoExample;
+			productReference = C88CBF1E2586097900E5FAFE /* JunoExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		C88CBEF82586076600E5FAFE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
 					C88CBF002586076600E5FAFE = {
+						CreatedOnToolsVersion = 12.1;
+						LastSwiftMigration = 1210;
+					};
+					C88CBF1D2586097900E5FAFE = {
 						CreatedOnToolsVersion = 12.1;
 					};
 				};
@@ -111,6 +179,7 @@
 			projectRoot = "";
 			targets = (
 				C88CBF002586076600E5FAFE /* Juno */,
+				C88CBF1D2586097900E5FAFE /* JunoExample */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +192,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C88CBF1C2586097900E5FAFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88CBF2D2586097900E5FAFE /* LaunchScreen.storyboard in Resources */,
+				C88CBF2A2586097900E5FAFE /* Assets.xcassets in Resources */,
+				C88CBF282586097900E5FAFE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -130,10 +209,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88CBF122586081700E5FAFE /* ConsoleViewController.swift in Sources */,
+				C88CBF4525860CB000E5FAFE /* Juno.swift in Sources */,
+				C88CBF152586082700E5FAFE /* Logger.swift in Sources */,
+				C88CBF0E258607CE00E5FAFE /* JunoMainController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C88CBF1A2586097900E5FAFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C88CBF252586097900E5FAFE /* ViewController.swift in Sources */,
+				C88CBF212586097900E5FAFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C88CBF262586097900E5FAFE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C88CBF272586097900E5FAFE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C88CBF2B2586097900E5FAFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C88CBF2C2586097900E5FAFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C88CBF072586076600E5FAFE /* Debug */ = {
@@ -188,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -246,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -261,6 +372,7 @@
 		C88CBF0A2586076600E5FAFE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DAQJUYBRTY;
@@ -277,6 +389,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = emreonder.Juno;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +399,7 @@
 		C88CBF0B2586076600E5FAFE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = DAQJUYBRTY;
@@ -301,6 +416,45 @@
 				PRODUCT_BUNDLE_IDENTIFIER = emreonder.Juno;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C88CBF302586097900E5FAFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = JunoExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emreonder.JunoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C88CBF312586097900E5FAFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DAQJUYBRTY;
+				INFOPLIST_FILE = JunoExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emreonder.JunoExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +477,15 @@
 			buildConfigurations = (
 				C88CBF0A2586076600E5FAFE /* Debug */,
 				C88CBF0B2586076600E5FAFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88CBF2F2586097900E5FAFE /* Build configuration list for PBXNativeTarget "JunoExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C88CBF302586097900E5FAFE /* Debug */,
+				C88CBF312586097900E5FAFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
