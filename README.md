@@ -22,7 +22,7 @@ Run `pods install` or `pods update` to intagrate pods with your project.
 
 ## How Does It Work:
 
-Just initialize the Juno just before `didFinishLaunchWithOptions` function return in AppDelegate and see the magic! (Of course write `print` in somewhere in your app :))
+Initialize the Juno just before `didFinishLaunchWithOptions` function return in AppDelegate and see print your logs with `Juno.print()` and see the magic!
 
 **How To Use It**
 
@@ -43,6 +43,10 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
     
  ```
+ 
+ Run below code to print
+ 
+ `Juno.print("Console Log Example")`
 **How To Run Example**
 
 Just select `JunoExample` scheme and hit run!
