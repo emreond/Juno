@@ -22,7 +22,7 @@ Run `pods install` or `pods update` to intagrate pods with your project.
 
 ## How Does It Work:
 
-Just initialize the Juno right after `didFinishLaunchWithOptions` function in AppDelegate and see the magic! (Of course write `print` in somewhere in your app :))
+Just initialize the Juno just before `didFinishLaunchWithOptions` function return in AppDelegate and see the magic! (Of course write `print` in somewhere in your app :))
 
 **How To Use It**
 
