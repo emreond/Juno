@@ -22,7 +22,8 @@ Just initialize the Juno right after `didFinishLaunchWithOptions` function in Ap
         #endif
         return true
     }
-    ```
+    
+ ```
 
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
