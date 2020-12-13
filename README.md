@@ -43,7 +43,9 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
     
  ```
+**How To Run Example**
 
+Just select `JunoExample` scheme and hit run!
 
 [swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
 [swift-url]: https://swift.org/
