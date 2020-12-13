@@ -27,20 +27,20 @@ Just initialize the Juno right after `didFinishLaunchWithOptions` function in Ap
 **How To Use It**
 
 ```
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+    // Override point for customization after application launch.
         
-        let bounds = UIScreen.main.bounds
-        window = UIWindow(frame: bounds)
-        let mainController = ViewController()
-        window?.rootViewController = UINavigationController(rootViewController: mainController)
-        window?.makeKeyAndVisible()
+    let bounds = UIScreen.main.bounds
+    window = UIWindow(frame: bounds)
+    let mainController = ViewController()
+    window?.rootViewController = UINavigationController(rootViewController: mainController)
+    window?.makeKeyAndVisible()
 
-        #if DEBUG
-        Juno()
-        #endif
-        return true
-    }
+    #if DEBUG
+    Juno()
+    #endif
+    return true
+}
     
  ```
 
