@@ -35,6 +35,7 @@ class Logger {
         }
     }
     
+    // Use this function to catch prints inside same framework. It doesn't work If print run on different module.
     func catchLogs() {
         dup2(self.outputPipe.fileHandleForWriting.fileDescriptor, FileHandle.standardOutput.fileDescriptor)
         

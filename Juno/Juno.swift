@@ -14,7 +14,18 @@ public class Juno {
     @discardableResult
     public init() {
         mainController = JunoMainController()
-        Logger.instance.catchLogs()
+    }
+    
+    public static func print(_ items: Any..., separator: String = " ", terminator: String = "\n") {
+        let output = items.map { "\($0)" }.joined(separator: separator)
+        Swift.print(output, terminator: terminator)
+        Logger.instance.addLog(log: output)
+    }
+    
+    public static func print(_ items: String..., filename: String = #file, function : String = #function, line: Int = #line, separator: String = " ", terminator: String = "\n") {
+        let output = items.map { "\($0)" }.joined(separator: separator)
+        Swift.print(output, terminator: terminator)
+        Logger.instance.addLog(log: output)
     }
     
 }
