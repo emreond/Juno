@@ -35,8 +35,4 @@ class Logger {
         }
     }
     
-    deinit {
-        NotificationCenter.default.removeObserver(NSNotification.Name.NSFileHandleDataAvailable)
-    }
-    
 }
